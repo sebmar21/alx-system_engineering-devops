@@ -1,2 +1,2 @@
-#! /bin/sh
-tmp/magic$ ls -la
+#! /bin/bash
+vi school /SCHOOL
