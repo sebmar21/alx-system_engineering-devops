@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la :e{School}
+0x00-shell_basics/school.mgc
