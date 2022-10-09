@@ -10,15 +10,15 @@ defaults
 	timeout client  30s
 	timeout server  30s
 
-frontend girma-tech-frontend
+frontend seblemariam-tech-frontend
 	bind *:80
 	bind *:443 ssl crt /etc/haproxy/certs/
-girma.tech.pem
+seblemariam.tech.pem
 	http-request redirect scheme https unless { ssl_fc }
 	http-request set-header X-Forwarded-Proto https
-	default_backend girma-tech-backend
+	default_backend seblemariam-tech-backend
 
-backend girma-tech-backend
+backend seblemariam-tech-backend
 	balance roundrobin
 	server 4416-web-01 3.239.12.19:80 check
 	server 4416-web-02 3.234.252.167:80 check
